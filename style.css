@@ -76,9 +76,28 @@ audio{
     display: none;
     z-index: 1;
     padding-left: 20px;
-    padding-top: 100px;
+    padding-top: 80px;
     transition: 0.4s;
 }
+
+.dropdown.on{
+    display: block;
+    transition: 0.4s;
+}
+
+.dropdown{
+    transition: 0.4s;
+
+    display: none;
+    margin-left: 15px;
+    border-left: 1px inset #828282;
+}
+
+.menu ul li input{
+    width: 200px;
+    background-color: rebeccapurple;
+}
+
 
 .mobile-nav.is-active{
 bottom: 0;
@@ -246,7 +265,7 @@ main{
 /* Left */
 .left{
     position: fixed;
-    height:540px;
+    height:80vh;
     width: 210px;
     margin-left: 20px;
     overflow: auto;
