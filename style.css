@@ -253,9 +253,7 @@ main{
 
 .main-page{
     z-index: 0;
-    /* position: relative; */
-    display: flex;
-    flex-direction: row;
+    position: relative;
     margin-bottom:50px;
 }
 
@@ -316,11 +314,8 @@ main{
 
 
 /* Mid */
-.kocak{
-    max-width: 100%;
-    display: flex;
-    padding: 20px;
-}
+
+
 
 .logo{
     width: 90px;
@@ -332,13 +327,13 @@ main{
 
 .mid{
     font-family: 'Inter', sans-serif; 
+    position: relative;
     color: white;
     display: flex;
     width: 1000px;
     flex-direction: column;
     padding: 0px 80px 0px 80px;
     margin-left: 220px;
-    /* margin-right:300px; */
     scroll-snap-type: x mandatory;
 }
 
@@ -481,17 +476,10 @@ main{
 .right{
     position: fixed;
     font-family: 'Inter', sans-serif; 
-    margin-left: 1200px;
-    height: fit-content;
+    right: 45px;
     border-bottom: 1px outset #828499;
 }
 
-@media screen and (min-width:1490px) {
-  
-    .kocak{
-        margin: auto;
-    }
-}
 
 .right h1{
     color: white;
@@ -554,24 +542,34 @@ footer .foot{
 
 
 
-
-
-
-
-
 /* RESPONSIVE */
+@media screen and (max-width:1332px)
+{
+    .right{
+        display: none;
+    }
+
+    .mid{
+        margin-right: 200px;
+    }
+
+}
+
 @media screen and (max-width:1270px){
     .right{
         display: none;
     }
 
     .mid{
-        width: 100%;
-        /* background-color: rebeccapurple; */
+        width: 80%;
         margin-left: 220px;
         margin-right: 0;
     }
-  
+
+     .mid .aca{
+        max-width: 100%;
+    }
+
 }
 
 @media screen and (max-width:1024px){
@@ -583,10 +581,7 @@ footer .foot{
     }
 
 
-     .mid .aca{
-        max-width: 100%;
-    }
-
+   
     .mid .informasi-umum  .table{
         overflow: auto;
     }
