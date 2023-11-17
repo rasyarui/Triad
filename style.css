@@ -118,7 +118,7 @@ bottom: 0;
 .mobile-nav .mobile-content{
     border-left: 1px inset #828499;
     overflow: auto;
-    height:486px;
+    height:80vh;
 }
 
 .mobile-nav .mobile-content > *{
@@ -247,13 +247,13 @@ main{
     position: relative;
     top:120px;
     display: block;
-    
+    align-items: center;
 
 }
 
 .main-page{
     z-index: 0;
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-direction: row;
     margin-bottom:50px;
@@ -265,7 +265,8 @@ main{
 /* Left */
 .left{
     position: fixed;
-    height:80vh;
+    height:75vh;
+    /* z-index: 0; */
     width: 210px;
     margin-left: 20px;
     overflow: auto;
@@ -315,6 +316,12 @@ main{
 
 
 /* Mid */
+.kocak{
+    max-width: 100%;
+    display: flex;
+    padding: 20px;
+}
+
 .logo{
     width: 90px;
 }
@@ -330,8 +337,8 @@ main{
     width: 1000px;
     flex-direction: column;
     padding: 0px 80px 0px 80px;
-    margin-left: 240px;
-    margin-right:150px;
+    margin-left: 220px;
+    /* margin-right:300px; */
     scroll-snap-type: x mandatory;
 }
 
@@ -474,8 +481,16 @@ main{
 .right{
     position: fixed;
     font-family: 'Inter', sans-serif; 
-    right: 50px;
+    margin-left: 1200px;
+    height: fit-content;
     border-bottom: 1px outset #828499;
+}
+
+@media screen and (min-width:1490px) {
+  
+    .kocak{
+        margin: auto;
+    }
 }
 
 .right h1{
@@ -526,7 +541,9 @@ footer{
     justify-content: center;
     display: flex;
     align-items: center;
-    /* background-color: rebeccapurple; */
+    margin: auto;
+
+
 }
 
 footer .foot{   
@@ -550,6 +567,7 @@ footer .foot{
 
     .mid{
         width: 100%;
+        /* background-color: rebeccapurple; */
         margin-left: 220px;
         margin-right: 0;
     }
