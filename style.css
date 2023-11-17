@@ -93,6 +93,7 @@
     text-decoration: none;
     margin-bottom: 20px;
   }
+
   
   .mobile-nav .mobile-content {
     border-left: 1px inset #828499;
@@ -640,4 +641,18 @@
       margin-left: 0;
     }
   }
-  
+
+
+
+.dropdown.on{
+    display: block;
+    transition: 0.4s;
+}
+
+.dropdown{
+    transition: 0.4s;
+
+    display: none;
+    margin-left: 15px;
+    border-left: 1px inset #828282;
+}
